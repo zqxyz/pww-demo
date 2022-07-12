@@ -116,7 +116,7 @@
             }
 
             .card {
-                height: calc((var(--body-width)/4));
+                height: calc(var(--body-width)/4);
             }
 
             @media screen and (max-width: 576px) {

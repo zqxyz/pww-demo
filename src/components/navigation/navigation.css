@@ -105,7 +105,7 @@ nav {
 #nav-search-btn-ctr {
     float: right;
     height: 100%;
-    padding: calc((var(--nav-height) / 4));
+    padding: calc(var(--nav-height) / 4);
 }
 
 #nav-search {

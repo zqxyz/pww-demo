@@ -221,7 +221,7 @@ a:hover {
   color: var(--darkest-gray);
 }
 
-#scroll-up-arrow {
+#scroll-up-arrow-container {
   float: right;
   margin: 10px;
   width: 50px;
@@ -234,7 +234,14 @@ a:hover {
   text-align: center;
 }
 
-#back-to-top:hover #scroll-up-arrow {
+#scroll-up-arrow {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#back-to-top:hover #scroll-up-arrow-container {
   background-color: var(--blue6);
 }
 
