@@ -143,15 +143,7 @@ nav[data-menu-collapsed='false'] {
 #nav-search[aria-expanded='true'] {
     outline: none;
     background-color: var(--blue4);
-    -webkit-border-radius: 3px;
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius: 3px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-radius: 3px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-radius: 3px 3px 0 0;
     color: white;
 }
 
