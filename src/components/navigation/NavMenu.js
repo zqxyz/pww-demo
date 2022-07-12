@@ -2,7 +2,7 @@ const NavMenu = () => {
   return (
     <div id="nav-menu">
 
-      <div id="nav-menu-1" className="nav-menu-column">
+      <div id="focal-nav-menu" className="nav-menu-column">
         <ul className="nav-primary-ul">
           <li>
             <a href="#">

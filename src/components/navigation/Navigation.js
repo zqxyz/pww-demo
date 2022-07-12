@@ -40,15 +40,22 @@ const Navigation = () => {
     setSearchPopUpCollapsed(!searchPopUpCollapsed)
   }
 
+  const toggleMenu = () => {
+    setMenuCollapsed(!menuCollapsed)
+    setSearchPopUpCollapsed(true)
+  }
+
   // Body
   return (
     <div ref={navigationRef}>
-      <nav>
+      <nav
+        data-menu-collapsed={(menuCollapsed) ? 'true' : 'false'}
+      >
         <button
           id="nav-menu-button"
           type="button"
           aria-label='Expands primary navigation menu'
-          onClick={() => setMenuCollapsed(!menuCollapsed)}
+          onClick={toggleMenu}
         >
           {(menuCollapsed)
             ? <svg className='nav-menu-button-icon'
