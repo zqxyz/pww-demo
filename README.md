@@ -5,7 +5,8 @@
 My goal with this project is to meet the visual criteria in a reasonable time,
 with my secondary goal being to enjoy doing so. I'll be using React with
 home-grown CSS only so I don't have to fight against a library [and fill the
-css with `!important`].
+css with `!important`]. I think using custom CSS will also demonstrate an
+attention to detail and display what matters to me in a user interface.
 
 
 ----------------------------------------
@@ -61,15 +62,13 @@ saving this part for last.
 Next, I create the hero banner --just the banner image with the photography and
 the search bar.
 
-I move on to the cards. I set up a structure anticipating 3 views:
-	- 4x1 cards on large screens
-	- 2x2 cards on narrower screens
-	- 1x4 cards on mobile devices
+I move on to the cards. These are quite simple, but required some tweaking with
+media queries to get working well across screen types.
 
 Moving on to Popular Services and Links, I use css's column-count to get the
 columns automatic, so a maintainer doesn't have to juggle links between divs.
 Links are marked as list items and the list item is set to `display: table` to
-prevent links from breaking and splitting between columns.
+prevent links from breaking and splitting between columns (happens in Firefox).
 
 Next is the Recent Updates and the Calendar of Events. I jam these in a single
 component together, each with their own component underneath. They also share
@@ -85,6 +84,25 @@ making little tweaks and adjustments while drinking coffee.
 
 Now onto the navigation menu and search pop-up.
 
+This takes me as long as the rest of the webpage. There are more complex
+choices to be made as the navbar has to stray significantly from the design.
+I did not go with a sticky navbar as these drive me crazy and leave some
+users feeling frustrated that they can't back out of the menu. On this same
+note, I allow users to simply click out of the nav menu and also the search pop
+up in the navbar, rather than requiring a reclick of the same button, which
+is often a small target. This is achieved with an event listener.
+
+Rather than engage in acrobatics of CSS, I hotswap the nav-menu component
+with a compacted version which works for tablets, mobile devices, and people
+who prefer large text (200% zoom or more by default). I try to assist the user
+in keeping the menu entirely on screen (without shrinking the text beyond
+readability) by letting only one section of the compact menu open at a time.
+I think keeping the components seperate keeps it more maintainable as well.
+
+Another decision made was to swap the insignia in the navbar to a watermark
+for small screens. Fitting all that content side-by-side at such sizes wasn't
+workign well. I think this is a nice compromise.
+
 
 ----------------------------------------
 ## FINISH
@@ -92,5 +110,7 @@ Now onto the navigation menu and search pop-up.
 	Project completion notes
 	and goodbyes
 
-This project in total took about 12 hours, split up into multiple sessions.
-I had a lot of fun doing it.
+This project in total took about 20 hours, split up into multiple sessions. Some
+concessions were made in the interest of time and getting the project completed.
+I genuinely had a lot of fun doing it, and as always, I learned something new.
+I look forward to more opportunites to complete projects like this with PWW or elsewhere.
