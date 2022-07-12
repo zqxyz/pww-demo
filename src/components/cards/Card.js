@@ -7,7 +7,7 @@ const Card = ({ image, altText, label, path }) => {
       className="card"
       href={path}
     >
-      <div className="card-contents vertical-center">
+      <div className="card-contents">
         <div className="card-icon">
           <img src={image} alt={altText} />
         </div>

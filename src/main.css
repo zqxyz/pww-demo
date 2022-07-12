@@ -90,13 +90,6 @@ span.noclip {
   display: inline-block;
 }
 
-.vertical-center {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .badge {
   background-color: var(--dark-gray);
   -webkit-border-radius: 2px;
