@@ -1,0 +1,49 @@
+:root {
+    --grid-pad: 35px;
+}
+
+.container {
+    padding: 0;
+    text-align: center;
+}
+
+.inner-container {
+    display: block;
+    max-width: var(--body-width);
+    margin: 0 auto;
+    padding: 0 var(--grid-pad);
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pad-top {
+    padding-top: var(--grid-pad);
+}
+
+.pad-width-standard {
+    padding: var(--grid-pad);
+}
+
+.row {
+    display: inline-block;
+    padding-bottom: var(--grid-pad);
+}
+
+
+@media screen and (max-width: 1250px) {
+
+
+    @media screen and (max-width: 992px) {
+
+
+        @media screen and (max-width: 768px) {
+
+
+            @media screen and (max-width: 576px) {}
+
+        }
+
+    }
+}

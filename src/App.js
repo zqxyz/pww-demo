@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './components/navigation/Navigation'
+import Hero from './components/hero/Hero'
+import Cards from './components/cards/Cards'
+import Popular from './components/popular/Popular'
+import CalendarAndUpdates from './components/calendar-and-updates/CalendarAndUpdates'
+import BackToTop from './components/back-to-top/BackToTop'
+import Foot from './components/footer/Foot'
+
+import './main.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+
+      <Hero />
+      <Cards />
+      <Popular />
+      <CalendarAndUpdates />
+
+      <BackToTop />
+      <Foot />
+
     </div>
   );
 }
 
-export default App;
+export default App

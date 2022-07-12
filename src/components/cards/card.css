@@ -1,0 +1,110 @@
+:root {
+    --grid-pad: 36px;
+    --card-dimensions:
+        calc((var(--body-width)/4) - var(--grid-pad) - (var(--grid-pad)/4));
+}
+
+.card-row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 0 var(--grid-pad) 0;
+    margin: 0;
+}
+
+.card {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: calc(var(--card-dimensions));
+    height: calc(var(--card-dimensions));
+    margin: 0 calc(var(--grid-pad)/2) 0 calc(var(--grid-pad)/2);
+    background-color: white;
+    border: 2px solid var(--light-gray2);
+    -webkit-box-shadow: 1px 1px 4px 1px rgba(95, 95, 95, 0.05);
+    box-shadow: 1px 1px 4px 1px rgba(95, 95, 95, 0.05);
+    text-decoration: none;
+}
+
+.card-set .card-row:first-child .card:first-child {
+    margin-left: 0;
+}
+
+.card-set .card-row:last-child .card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    border: 2px solid var(--blue3);
+    text-decoration: none;
+}
+
+.card-contents {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-icon {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+}
+
+.card-label {
+    display: flex;
+    margin: 1rem 1rem 0 1rem;
+    font-family: var(--standard-font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--blue3);
+}
+
+@media screen and (max-width: 1250px) {
+
+    .card-set .card-row:first-child .card:first-child {
+        margin: 0 calc(var(--grid-pad)) 0 0;
+    }
+
+    .card-set .card-row:last-child .card:last-child {
+        margin: 0 0 0 calc(var(--grid-pad));
+    }
+
+    .card-row {
+        width: 100%;
+    }
+
+    .card {
+        height: calc((var(--body-width)/4));
+        width: calc(50% - (var(--grid-pad)/2));
+        margin: 0;
+    }
+
+    @media screen and (max-width: 992px) {
+        .card-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+
+            @media screen and (max-width: 576px) {
+                .card-icon {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+
+    }
+}
