@@ -135,7 +135,13 @@ const Navigation = () => {
 
 
         <div id="insignia">
-          <img src="/images/RFA Logo Final.png" />
+          <a href="#" id="insignia-link">
+            <img
+              src="/images/RFA Logo Final.png"
+              alt="South Carolina Revenue and Fiscal
+                   Affairs Office logo"
+            />
+          </a>
         </div>
 
         <div id="site-title">

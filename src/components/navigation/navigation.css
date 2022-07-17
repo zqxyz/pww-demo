@@ -57,6 +57,10 @@ nav[data-menu-collapsed='false'] {
     width: 80px;
 }
 
+#insignia-link:hover img {
+    opacity: 65%;
+}
+
 /* BUTTONS */
 /* Hamburger menu */
 #nav-menu-button {
