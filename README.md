@@ -109,6 +109,8 @@ workign well. I think this is a nice compromise.
 
 	Project completion notes
 	and goodbyes
+	
+[Live page](https://pww-demo-scrfa.web.app/)
 
 This project in total took about 20 hours, split up into multiple sessions. Some
 concessions were made in the interest of time and getting the project completed.
