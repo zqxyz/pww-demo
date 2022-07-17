@@ -3,8 +3,7 @@ import './foot.css'
 
 const Foot = () => {
   return (
-    <Container
-      bgcolor={'#1B3A61'}>
+    <Container bgcolor={'#1B3A61'}>
       <div id="foot">
 
         <div className="foot-column" id="foot-left">

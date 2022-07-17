@@ -4,16 +4,20 @@ import NavMenu from './NavMenu'
 import NavMenuCompact from './NavMenuCompact'
 import useCurrentWidth from '../utilities/screenWidth'
 
+interface DOMEvent<T extends EventTarget> extends Event {
+  readonly target: T
+}
+
 const Navigation = () => {
   const [menuCollapsed, setMenuCollapsed] = React.useState(true)
   const [searchPopUpCollapsed, setSearchPopUpCollapsed] = React.useState(true)
 
-  const navigationRef = React.useRef()
+  const navigationRef: React.Ref<HTMLDivElement> = React.useRef()
 
   // Close menu when clicking outside of menu area
   React.useEffect(() => {
-    const onBodyClick = event => {
-      if (navigationRef.current.contains(event.target)) {
+    const onBodyClick = (event: MouseEvent) => {
+      if (navigationRef.current.contains(event.target as Element)) {
         return
       }
       setMenuCollapsed(true)

@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../container/Container'
 import RecentUpdates from './RecentUpdates'
 import CalendarEvents from './CalendarEvents'

@@ -4,8 +4,8 @@ import './popular.css'
 const Popular = () => {
   return (
     <Container
-      bgcolor={'white'}
-      classN='pad-top'
+      bgcolor={'#FFFFFF'}
+      className='pad-top'
     >
       <h1 className="header-style-3">
         Popular Services and Links

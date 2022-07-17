@@ -1,7 +1,14 @@
 import React from 'react'
 import './card.css'
 
-const Card = ({ image, altText, label, path }) => {
+type Props = {
+  image: string,
+  altText: string,
+  label: string,
+  path: string
+}
+
+const Card: React.FC<Props> = ({ image, altText, label, path }) => {
   return (
     <a
       className="card"

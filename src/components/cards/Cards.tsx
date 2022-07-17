@@ -1,6 +1,5 @@
-import React from 'react'
 import Container from '../container/Container'
-import Card from './Card.js'
+import Card from './Card'
 
 const Cards = () => {
   return (

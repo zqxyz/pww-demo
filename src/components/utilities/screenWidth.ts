@@ -8,7 +8,7 @@ const useCurrentWidth = () => {
   const [width, setWidth] = useState(getWidth())
 
   useEffect(() => {
-    let timeoutId = null
+    let timeoutId: NodeJS.Timeout = null
     const resizeListener = () => {
       // Debounce for performance
       clearTimeout(timeoutId)

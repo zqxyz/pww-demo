@@ -1,14 +1,23 @@
+import React from "react"
 import Container from "../container/Container"
 // css inside main.css
 
+
+
 const BackToTop = () => {
+
+  const scrollToTop = (event: React.MouseEvent) => {
+    event.preventDefault()
+    window.scrollTo(0, 0)
+  }
+
   return (
     <Container>
       <div id="back-to-top-container">
         <a
           href="#"
           id="back-to-top"
-          onClick={window.scrollTo(0, 0)}
+          onClick={scrollToTop}
         >
           <div id="scroll-up-arrow-container">
             <div id="scroll-up-arrow">
