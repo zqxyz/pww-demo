@@ -1,4 +1,14 @@
-const NavMenuCompactEntry = ({
+import React from 'react'
+
+type Props = {
+  sectionCollapsed: boolean,
+  handleCollapseToggle: (event: React.MouseEvent<Element>) => void,
+  id: string,
+  title: string,
+  children: JSX.Element | JSX.Element[]
+}
+
+const NavMenuCompactEntry: React.FC<Props> = ({
   sectionCollapsed,
   handleCollapseToggle,
   id,
