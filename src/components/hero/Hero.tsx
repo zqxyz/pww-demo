@@ -4,11 +4,11 @@ import './hero.css'
 const Hero = () => {
   const [searchInput, setSearchInput] = React.useState('')
 
-  const onSearchInputChangeHandler = e => {
+  const onSearchInputChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value)
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchInput.length > 1) {
       alert(`Search for '${searchInput}' here`)
