@@ -66,7 +66,7 @@ const CalendarEvents = () => {
 
         <div className="calendar-item-contents">
           <div className="calendar-item-info">
-          <span
+            <span
               className="badge"
               data-badge-color='red'
             >

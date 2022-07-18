@@ -118,20 +118,30 @@
 }
 
 .calendar-item-list li {
-    margin-bottom: .5rem;
+    margin-bottom: .55rem;
     font-weight: 500;
 }
 
-.calendar-item-list-location {
-    list-style-image: url('/public/images/lists/pin.svg');
+.calendar-item-list li::before {
+    content: "";
+    float: left;
+    position: absolute;
+    transform: translateX(-2rem) translateY(3px);
+    height: 1.15rem;
+    width: 1.15rem;
+    background-size: cover;
 }
 
-.calendar-item-list-time {
-    list-style-image: url('/public/images/lists/clock.svg');
+.calendar-item-list-location::before {
+    background-image: url('/public/images/lists/pin.svg');
 }
 
-.calendar-item-list-contact {
-    list-style-image: url('/public/images/lists/contact.svg');
+.calendar-item-list-time::before {
+    background-image: url('/public/images/lists/clock.svg');
+}
+
+.calendar-item-list-contact::before {
+    background-image: url('/public/images/lists/contact.svg');
 }
 
 .calendar-item:last-of-type .calendar-item-info {
